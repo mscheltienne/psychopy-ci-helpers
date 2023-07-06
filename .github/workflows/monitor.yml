@@ -31,7 +31,7 @@ jobs:
         if: failure()
         uses: dacbd/create-issue-action@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: $${{ github.token }}
           title: PsychoPy released a new version!
           body: |
             Please visit https://github.com/psychopy/psychopy/releases and review the changes.
