@@ -23,7 +23,7 @@ jobs:
           repository: psychopy/psychopy
           excludes: prerelease, draft
       - name: Compare release versions
-        run: echo ${{ steps.psychopy_latest.outputs.release }}
+        run: [ "$LATEST_RELEASE" != "${{ steps.psychopy_latest.outputs.release }}" ] && exit 1
       - name: Create GitHub issue
         if: failure()
         uses: dacbd/create-issue-action@main
