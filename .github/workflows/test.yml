@@ -33,3 +33,7 @@ jobs:
           architecture: 'x64'
       - name: Update pip and setuptools
         run: python -m pip install --progress-bar off --upgrade pip setuptools wheel
+      - name: Install psychopy
+        run: ./auto.sh
+      - name: Check install
+        run: pip show psychopy psychtoolbox
