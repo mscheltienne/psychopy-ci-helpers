@@ -1,0 +1,11 @@
+name: 'psychopy-ci-helper'
+description: 'Setup psychopy on CIs'
+author: Mathieu Scheltienne
+branding:
+  icon: 'circle'
+  color: 'black'
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: ./auto.sh
