@@ -36,4 +36,6 @@ jobs:
       - name: Install psychopy
         uses: ./
       - name: Check install
-        run: pip show psychopy psychtoolbox
+        run: |
+          python -m pip show psychopy psychtoolbox
+          python -c "import psychopy"
