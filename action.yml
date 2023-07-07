@@ -10,7 +10,7 @@ runs:
     - shell: bash
       run: |
         if [ "${{ runner.os }}" == "Windows" ]; then
-          bash -ef "${{ github.workspace }}/auto.sh"
+          bash -ef "${{ github.action_path }}/auto.sh"
         else
-          ${{ github.workspace }}/auto.sh
+          ${{ github.action_path }}/auto.sh
         fi
