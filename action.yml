@@ -8,6 +8,4 @@ runs:
   using: "composite"
   steps:
     - shell: bash
-      run: |
-        chmod +x ${{ github.workspace }}/auto.sh
-        ${{ github.workspace }}/auto.sh
+      run: ${{ github.workspace }}/auto.sh
