@@ -13,10 +13,10 @@ Prior to running this action, python must be installed with
 
 ```yaml
 - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.9
-          architecture: 'x64'
+  uses: actions/setup-python@v4
+  with:
+    python-version: 3.9
+    architecture: 'x64'
 - name: Install Psychopy
   uses: mscheltienne/setup-psychopy@0.1.2
 ```
