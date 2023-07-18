@@ -18,7 +18,7 @@ Prior to running this action, python must be installed with
     python-version: 3.9
     architecture: 'x64'
 - name: Install Psychopy
-  uses: mscheltienne/setup-psychopy@0.1.3
+  uses: mscheltienne/setup-psychopy@0.1.4
 ```
 
 ## General information
