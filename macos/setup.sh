@@ -7,4 +7,4 @@ if [[ $py_version == "310" ]]; then
 else
     python -m pip install --progress-bar off psychopy
 fi
-python -m pip install --progress-bar off psychtoolbox
+python -m pip install --progress-bar off psychtoolbox psychopy-sounddevice

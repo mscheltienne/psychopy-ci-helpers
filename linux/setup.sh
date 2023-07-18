@@ -6,4 +6,4 @@ readonly py_version=$(python -c 'import sys; print("".join(map(str, sys.version_
 readonly wx_name="wxPython-4.2.1-cp${py_version}-cp${py_version}-linux_x86_64.whl"
 curl https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04/${wx_name} -o ${wx_name}
 python -m pip install --progress-bar off ${wx_name}
-python -m pip install --progress-bar off psychopy psychtoolbox
+python -m pip install --progress-bar off psychopy psychtoolbox psychopy-sounddevice
