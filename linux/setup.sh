@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo apt install libusb-1.0-0-dev portaudio19-dev libasound2-dev libsdl2-2.0-0
+sudo apt install libusb-1.0-0-dev portaudio19-dev libasound2-dev libsdl2-2.0-0 libnotify4 freeglut3-dev
 python -m pip install --progress-bar off --upgrade pip setuptools wheel
 readonly py_version=$(python -c 'import sys; print("".join(map(str, sys.version_info[:2])))')
 readonly wx_name="wxPython-4.2.1-cp${py_version}-cp${py_version}-linux_x86_64.whl"
