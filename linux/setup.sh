@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+sudo apt update
 sudo apt install libusb-1.0-0-dev portaudio19-dev libasound2-dev libsdl2-2.0-0 libnotify4 freeglut3-dev
 python -m pip install --progress-bar off --upgrade pip setuptools wheel
 readonly py_version=$(python -c 'import sys; print("".join(map(str, sys.version_info[:2])))')
